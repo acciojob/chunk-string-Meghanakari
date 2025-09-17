@@ -1,14 +1,8 @@
-function chunkString(str, chunkLength) {
-    if (str === null) {
-        return [];
-    }
-
+function chunkString(str,sixe) {
     let chunks = [];
-    for (let i = 0; i < str.length; i += chunkLength) {
-        chunks.push(str.substring(i, i + chunkLength));
+    for (let i = 0; i < str.length-1; i++) {
+        let subStr=str.slice(i,i+size);
+        chunks.push(subStr);
     }
-
     return chunks;
 }
-
-
